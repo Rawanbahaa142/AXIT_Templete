@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway Regular', 'Raleway';
+  background-color: #f0f0f0;
+  /* color:#f0f0f0; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 180px;
+  background-color: rgb(58, 156, 209);
+  margin: 10px 0;
+  margin-left: 0;
+}
+
+p {
+  color: #9e9898;
+}
+
+.clear {
+  clear: both;
+}
+
+nav {
+  background-color: rgb(51, 51, 51);
+  padding: 1% 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-inline-block {
+  display: inline-block;
+
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(58, 156, 209);
+}
+
+li {
+  margin-left: 6px;
+}
+
+.float-left {
+  float: left;
+}
+
+.input {
+  display: inline-block;
+  border: none;
+
+}
+
+/* SEC 1*/
+.sec1 {
+  position: relative;
+  background-image: url('../images/small.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+}
+
+.sec1 .container {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.sec1 .left h1 {
+  font-size: 50px;
+}
+
+.left,
+.form {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  padding: 20px;
+  background: transparent;
+}
+
+.sec1 .top-header {
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.sec1 .left hr {
+  margin-top: 15px;
+  height: 3px;
+  width: 100px;
+}
+
+.form {
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: #9e9898;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: none;
+  color: rgb(251, 253, 253);
+  border: 2px solid rgb(58, 156, 209);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.btn:hover,
+.btn-form {
+  background-color: rgb(58, 156, 209);
+}
+
+.btn-form {
+  padding: 10px 20px;
+  background: none;
+  color: rgb(58, 156, 209);
+  border: 2px solid rgb(58, 156, 209);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+.social {
+  background-color: #f7f7f7;
+}
+
+.social .right i {
+  margin-right: 10px;
+  font-size: 35px;
+  color: rgb(58, 156, 209);
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+/* 
+.tabs .right-image {
+
+  width: 100%;
+  /* transform: scaleY(-1); 
+  opacity: 0.3;
+  border-radius: 10px;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+} */
+
+/* Reflection Section */
+.reflection-section {
+  background: #eee;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.image-wrapper {
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.reflection-wrapper {
+  margin-top: -5px;
+  overflow: hidden;
+  height: 100px;
+}
+
+.reflection-image {
+  width: 100%;
+  transform: scaleY(-1);
+  opacity: 0.3;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  border-radius: 5px;
+}
+
+.text-content {
+  float: left;
+  width: 60%;
+}
+
+.text-content h2 {
+  font-weight: bold;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background: rgb(58, 156, 209);
+  margin: 10px 0;
+}
+
+.text-content p {
+  color: gray;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: rgb(58, 156, 209);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+/* Standard CSS  */
+
+.standard,
+.sublist,
+.tabs {
+  background-color: #eee;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.right-image,
+.left-text {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+.left-text {
+  margin-right: 2%;
+}
+
+.right-image {
+  margin-left: 17%;
+}
+
+.awesome {
+  background-color: white;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.awesome .text {
+  margin-bottom: 3%;
+  text-align: center;
+
+}
+
+.awesome .card {
+  width: 30%;
+  margin: 1%;
+  border-radius: 5px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.awesome .card i {
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #908e8e;
+  margin-left: 9%;
+}
+
+.awesome .card p,
+.awesome .card h3 {
+  margin-top: 10px;
+}
+
+
+
+/* Pricing option CSS */
+.pricing {
+  padding: 1%;
+}
+
+.pricing .container {
+  text-align: center;
+  background-color: #eee;
+  padding: 2%;
+}
+
+.pricing-text {
+  margin: 8px 0;
+}
+
+.pricing hr {
+  margin-left: 42%;
+  margin-top: 10px;
+  height: 3px;
+}
+
+.pricing-cards {
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.pricing .pricing-card {
+  width: 30%;
+  float: right;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 20px;
+  margin: 0 1.5%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+.pricing-card h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.pricing-card .price {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.pricing-card p.popular {
+  background-color: rgb(58, 156, 209);
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+
+.stylish {
+  position: relative;
+  background-image: url('../images/pexels-pixabay-302769.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+.stylish .container {
+  position: relative;
+  z-index: 2;
+  padding: 50px;
+}
+
+.stylish hr {
+  margin-left: 45%;
+  margin-top: 10px;
+  height: 3px;
+  width: 100px;
+}
+
+.sublist {
+  padding: 3%;
+  background-color: #fffefe;
+}
+
+.sublist .container {
+  width: 80%;
+  overflow: hidden;
+}
+
+.sublist .right-text {
+  float: right;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.sublist .right-text h3 {
+  margin-bottom: 10px;
+  display: inline-block;
+  border-bottom: 2px solid rgb(58, 156, 209);
+  padding-bottom: 5px;
+}
+
+.sublist .right-text p {
+  margin-top: 0;
+}
+
+.contact {
+  padding: 3%;
+  background-color: #eee;
+  text-align: center;
+}
+
+.contact .container {
+  width: 80%;
+  overflow: hidden;
+}
+
+.contact .center-text {
+  text-align: center;
+  margin: 20px 10%;
+}
+
+.contact .center-text h2 {
+  margin-bottom: 10px;
+}
+
+.contact .center-text hr {
+  margin-left: 45%;
+  margin-top: 10px;
+  height: 3px;
+  width: 70px;
+}
+
+.contact fields {
+  float: left;
+  width: 45%;
+}
+
+.contact message {
+  float: right;
+  width: 45%;
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact #message {
+  float: right;
+  width: 45%;
+  height: 110px;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #9e9898;
+
+}
+
+
+
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #9e9898;
+  background-color: #eee;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(58, 156, 209);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+
+}
+
+.contact form button:hover {
+  background-color: rgb(58, 156, 209);
+}
+
+.footer {
+  text-align: center;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 1%;
+}
+
+.footer .icons {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+.footer a {
+  color: rgb(58, 156, 209);
+}
+
+.footer .icons i {
+  margin-right: 10px;
+}
+
+.footer p {
+  margin-top: 0;
+}
